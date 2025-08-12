@@ -37,6 +37,14 @@
 - 明確失敗與恢復流程
 - 建立可重現的驗收步驟
 
+## 範例程式碼
+位於 `code/` 目錄：
+
+- `producer.py`：發送 "Hello RabbitMQ!" 到名為 `hello` 的佇列。
+- `consumer.py`：接收訊息並以 ACK 確認。
+
+執行方式：於兩個終端分別執行 `python producer.py` 與 `python consumer.py`。
+
 ## 測試
 - 正向：訊息正確路由與消費
 - 逆向：參數錯誤、佇列不存在、權限不足
@@ -61,3 +69,7 @@
 - 加入多租戶 vhost
 - 設計更細的 routing key 與監控
 - 撰寫實驗報告與調整建議
+
+## 驗收
+- 透過 Management UI 確認訊息成功傳遞與消費
+- 驗證 ready 與 unacked 計數歸零
