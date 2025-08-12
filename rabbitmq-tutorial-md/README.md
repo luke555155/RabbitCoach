@@ -1,7 +1,6 @@
-# RabbitMQ 技術研究教程（Markdown 套件，無程式碼）
+# RabbitMQ 技術研究教程
 
-目的：提供從入門到進階的學習路線與小型 POC 規格。每個單元為獨立目錄，包含 `README.md` 與 `design.md`。  
-注意：本套件僅含 Markdown 文字說明，未包含任何程式碼。
+目的：提供從入門到進階的學習路線與小型 POC 規格。每個單元為獨立目錄，包含 `README.md`、`design.md` 與範例程式碼。
 
 ## 學習順序
 00-setup-and-basics → 01-hello-queue → 02-exchanges-and-bindings → 03-durability-and-persistence → 04-ack-qos-prefetch → 05-publisher-confirms-vs-transactions → 06-dlx-and-ttl → 07-retry-policies-and-backoff → 08-idempotent-consumers → 09-transactional-outbox → 10-rpc-over-rabbitmq → 11-priority-and-delayed-messages → 12-quorum-vs-classic-mirrored → 13-connection-resiliency → 14-security-auth-tls-vhost-policy → 15-observability-and-metrics → 16-performance-tuning → 17-integration-with-web-api → 18-saga-and-process-orchestration → 99-poc-high-concurrency-reservation
@@ -18,6 +17,7 @@
 - `NN-topic/`：單元資料夾（NN 為 2 位數序號）
   - `README.md`：學習說明與任務
   - `design.md`：架構與參數設計
+  - `code/`：對應主題的示範程式碼
 
 ## 版本與時間
 - 版本：v1.0
