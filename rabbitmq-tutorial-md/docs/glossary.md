@@ -1,0 +1,11 @@
+# 名詞表（簡要）
+- AMQP：進階訊息佇列協定
+- Exchange：交換器，負責路由訊息到 Queue
+- Queue：佇列，儲存待消費的訊息
+- Binding：交換器與佇列的綁定規則
+- Routing Key：路由鍵，用於匹配規則
+- DLX/DLQ：死信交換器/佇列
+- TTL：存活時間
+- Prefetch：每次抓取訊息數上限
+- Publisher Confirms：發佈確認機制
+- Quorum Queue：以 Raft 共識維護的佇列
